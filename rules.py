@@ -75,9 +75,9 @@ class Rules:
 		'''
 			At least one of these params need to be set:  sessions_to_remove or stages_to_remove
 
-			param: sessions_to_remove:  removes any ATX sessions user specifies using session/meeting names 
+			param: sessions_to_remove:  removes any  sessions user specifies using session/meeting names 
 			
-			param: stages_to_remove: removes any ATX sessions user specificies using stages
+			param: stages_to_remove: removes any  sessions user specificies using stages
 
 			param: Lookback_date:  filter df starting from lookback_date if given
 			
@@ -129,7 +129,7 @@ class Rules:
 		'''
 			removes recommendations from model predictions df where the individual already attended the session in the past if any
 
-			set df in Rules class param to historical ATX attended sessions
+			set df in Rules class param to historical  attended sessions
 
 			param df_predictions:   dataframe of the recommendations from the model
 
