@@ -225,7 +225,7 @@ def train_model(df, tf_dataset, train_df, test_df, train_len, test_len, lr, num_
 		shutil.move('training_history_results.csv', results)
 
 
-def main(csvfile, model_dir, epochs, lr, early_stop=False, seed=55):
+def train_main(csvfile, model_dir, epochs, lr, early_stop=False, seed=55):
 	path = os.path.abspath(os.getcwd())
 	df = pd.read_csv(path + '\\' + 'data' + '\\' + csvfile)
 	df = clean_data(df)
