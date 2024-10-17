@@ -1,6 +1,8 @@
 **🎯 TensorFlow Recommenders: Building a Powerful Recommendation System**
 
-Welcome to my recommendation system project, built using TensorFlow Recommenders. This project demonstrates the creation of a robust recommendation engine, capable of providing personalized suggestions by leveraging the power of deep learning.
+This project demonstrates the creation of a robust recommendation engine, capable of providing personalized suggestions by leveraging the power of TensorFlow Recommenders. 
+
+<br/>
 
 **🚀 What Are Recommendation Systems?**
 
@@ -10,6 +12,15 @@ Recommendation systems are at the core of many modern platforms, providing users
 
 **Item-Item Similarities:** Similarity between items themselves. If a user likes item X, the system will recommend item Y, which has a similar pattern of interactions from other users.
 
+<br/>
+
+**💡 Key Features**
+
+State-of-the-art recommendation engine using TensorFlow Recommenders.
+
+Utilizes nearest neighbor search and matrix factorization for generating accurate, personalized recommendations.
+
+<br/>
 
 **🔍 How Does It Work?**
 
@@ -35,10 +46,13 @@ User Matrix: Encodes user preferences.
 Item Matrix: Encodes item characteristics.
 By decomposing the large matrix of user-item interactions, matrix factorization identifies hidden factors that influence user behavior. These factors can represent abstract concepts, such as a preference for action movies or a tendency to buy products during a sale. When these low-dimensional representations are multiplied together, the result is a prediction of how much a given user might like a particular item.
 
+<br/>
 
 **TensorFlow Recommenders Implementation**
 
-This project uses a hybrid model of TensorFlow Recommenders (TFRS) and custom rules to recommend webinar sessions to different users.  The recommendation system was created to provide recommended webinar sessions to users based on their attributes and the webinar's attributes. It allowed us to quickly experiment with different models, data, and techniques and expand further. This repository includes the initial code and some dummy data for training, and predictions. 4 attributes of users and 4 attributes of sessions were used initially. This project demonstrates:
+This project uses a hybrid model of TensorFlow Recommenders (TFRS) and custom rules to recommend webinar sessions to different users.  The recommendation system was created to provide recommended webinar sessions to users based on their attributes and the webinar's attributes. It allowed us to quickly experiment with different models, data, and techniques and expand further. This repository includes the initial code and some dummy data for training, and predictions. 4 attributes of users and 4 attributes of sessions were used initially. 
+
+This project demonstrates:
 
 User and Session Embeddings: Transform user and session data into embeddings that capture meaningful relationships.
 
@@ -46,6 +60,7 @@ Two-Tower Models: One tower for user embeddings and another for session embeddin
 
 Nearest Neighbor Retrieval: Efficiently find the top sessions for a given user by retrieving the nearest neighbors in the embedding space.
 
+<br/>
 
 **🔧 Installation and Usage**
 
@@ -61,11 +76,6 @@ run train_main function from model.py
 Generate recommendations:
 python main.py
 
-
-**💡 Key Features**
-
-State-of-the-art recommendation engine using TensorFlow Recommenders.
-Utilizes nearest neighbor search and matrix factorization for generating accurate, personalized recommendations.
-Supports various types of user-item interactions, including explicit and implicit feedback.
+<br/>
 
 Feel free to explore the code, swap out the sample data with your own data, run the training, and provide recommendations!
